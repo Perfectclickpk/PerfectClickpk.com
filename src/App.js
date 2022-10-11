@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import { Header } from "./Componenets/Header";
+import { MainPage } from "./Componenets/MainPage";
+import { VisionSection } from "./Componenets/VisionSection";
+import { Clients } from "./Componenets/Clients";
+import { Studios } from "./Componenets/Studios";
+import { Testimonial } from "./Componenets/Testimonial";
+import {Videohelp} from "./Componenets/Videohelp"
+import {Confusechat} from "./Componenets/Confusechat"
+import {Footer} from "./Componenets/Footer"
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="mainbackground">
+        <img src="../images/sidedesign.png" className="bg-img"/>
+      </div>
+        <Header />
+        <MainPage />
+        <VisionSection/>
+        <Clients/>
+        <Studios/>
+        <Testimonial/>
+        <Videohelp/>
+        <Confusechat/>
+        <Footer/>
+
     </div>
   );
 }
